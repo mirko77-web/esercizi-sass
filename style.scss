@@ -1,9 +1,10 @@
-$primary_1: #333;
-$primary_2:#ff0000;
-$fontsize: 18px;
 
-.navbar {
-    background-color:$primary_1;
+%background-light-grey {
+    background-color: #e7e7e7;
+  }
+  
+  .navbar {
+    background-color: #333;
     text-align: center;
     
     .menu {
@@ -14,17 +15,25 @@ $fontsize: 18px;
       justify-content: center;
   
       li {
-        margin: 0 20px; 
+        margin: 0 20px;
   
         a {
           text-decoration: none;
           color: white;
-          font-size:$fontsize;
+          font-size: 18px;
   
           &:hover {
-            color:$primary_2;
+            color: #ff0000;
           }
+        }
+  
+        &:last-child {
+          @extend %background-light-grey;
+          border-color: #333333;
+          border-style: solid;
+          border-width: 1px;
         }
       }
     }
   }
+  
