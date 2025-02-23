@@ -54,3 +54,16 @@
   flex: 3;
   background-color: #e4e4e4;
 }
+
+@import 'colors';
+@import 'theme';
+
+// Tema chiaro per la navbar
+.navbar.light-theme {
+  @include theme($light-bg-color, $light-text-color, $light-hover-color);
+}
+
+// Tema scuro per la navbar
+.navbar.dark-theme {
+  @include theme($dark-bg-color, $dark-text-color, $dark-hover-color);
+}

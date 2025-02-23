@@ -1,0 +1,16 @@
+// _theme.scss
+
+// Mixin per il tema
+@mixin theme($bg-color, $text-color, $hover-color) {
+    background-color: $bg-color;
+    color: $text-color;
+  
+    .menu li a {
+      color: $text-color;
+  
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+  
