@@ -74,4 +74,15 @@
  
   color: yellow; 
 }
-/*# sourceMappingURL=style.css.map */
+
+.container .content-1 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4; 
+}
+.container .content-2 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4; 
+}
+

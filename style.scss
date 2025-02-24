@@ -74,3 +74,16 @@
   }
 
   $noHover: true; 
+
+  @for $i from 1 through 2 {
+    .content-#{$i} {
+      padding: 20px;
+      border: 1px solid #ccc;
+
+      @if $i == 1 {
+        background-color: $light-background; // chiaro per il primo div
+      } @else {
+        background-color: $dark-background; // scuro per il secondo div
+      }
+    }
+  }
