@@ -87,3 +87,16 @@
       }
     }
   }
+
+  $colors: #ff00ff, #00ff00, #0000ff, #ff0000; 
+
+
+
+@import 'colors'; 
+
+@each $color, $index in $colors {
+  .menu-item-#{$index + 1} {
+    color: $color;
+  }
+}
+
