@@ -53,6 +53,7 @@
 .content-2 {
   flex: 3;
   background-color: #e4e4e4;
+  font-size: px-to-em(24px);
 }
 
 @import 'colors';
@@ -67,3 +68,7 @@
 .navbar.dark-theme {
   @include theme($dark-bg-color, $dark-text-color, $dark-hover-color);
 }
+
+@function px-to-em($px-value, $base-font-size: 16px) {
+    @return $px-value / $base-font-size * 1em;
+  }

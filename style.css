@@ -45,6 +45,7 @@
 .content-2 {
   flex: 3;
   background-color: #e4e4e4;
+  font-size: px-to-em(24px);
 }
 
 .navbar.light-theme {
