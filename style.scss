@@ -72,3 +72,5 @@
 @function px-to-em($px-value, $base-font-size: 16px) {
     @return $px-value / $base-font-size * 1em;
   }
+
+  $noHover: true; 
